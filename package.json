@@ -1,0 +1,17 @@
+{
+  "name": "slides",
+  "version": "1.0.0",
+  "description": "class slides",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npx @marp-team/marp-cli -s ."
+  },
+  "author": "sigma",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@marp-team/marp-cli": "^3.4.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
+}
