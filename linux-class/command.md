@@ -71,3 +71,45 @@ rm -i # 事故防止
 rm -f # 強制的に削除
 rm -r # 再帰的に削除
 ```
+
+# ディレクトリ操作コマンド
+
+# pwdコマンド
+print working directory
+現在居るディレクトリのこと、working directory(作業ディレクトリ)は頻出ワード
+```bash
+pwd
+```
+# cdコマンド
+ｃhange directory
+```bash
+cd /home # 絶対パス
+cd relativePath # 相対パス
+cd .. # .. は一つ上位のディレクトリを表す
+```
+
+# 絶対パスと相対パス
+* 絶対パス
+	* `/home` のような、最上位のルートディレクトリを基準とした指定。
+* 相対パス
+	* `./relativePath` `relativePath` のような、現在のディレクトリを基準とした指定。
+
+# 特別なディレクトリ
+* `.`  現在のディレクトリを表す
+* `..` 現在のディレクトリの親のディレクトリを表す
+* `~` ログイン直後にユーザーが必ずいるホームディレクトリを表す。
+* `/` 最上位階層であるルートディレクトリを表す。システムが動くために必要な安易に触ってはいけないファイルが沢山ある。
+
+# mkdirコマンド
+make directory
+```bash
+mkdir newDir
+mkdir -p parent/child
+```
+
+# rmdirコマンド
+remove directory
+```bash
+rmdir emptyDir
+```
+中が空でないと削除できない
