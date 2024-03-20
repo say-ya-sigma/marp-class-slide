@@ -60,3 +60,19 @@ section.lead h1 {
 	* Dockerfile
 	* devcontainer.json
 * 全員の開発環境が一致する
+
+# DockerとmacOS
+* DockerはホストのLinuxを使っている
+* macOS上ではそのままでは動かない
+* macOS上にVMを立てて動かす
+
+# Docker Desktop
+* 一発でDockerのセットアップが終わる
+* 色んなGUIツールが付属する
+
+# Docker Machineのインストール
+* brewでインストールしたい
+https://formulae.brew.sh/cask/docker
+```bash
+$ brew install --cask docker
+```
