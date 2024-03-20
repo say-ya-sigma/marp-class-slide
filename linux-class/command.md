@@ -139,3 +139,14 @@ cat texts/*　# 複数ファイルを選択すると連結して表示される
 * `↓` 次の行に進む
 * `/単語` 単語を検索。 n キーで検索結果をジャンプ。
 * `q` ページャコマンドを終了 (quit) します。
+
+# 検索
+
+# findコマンド
+```bash
+find findDir/ -name wantedFile
+find findDir/ -name '*.md' # nameにはワイルドカードが指定できる
+find findDir/ -name '*.md' | xargs wc -l # xargsを使ってパイプすると例えばマッチするファイルの行数を数えられる。
+find nestedFindDir/ -name '*.md' -type f # directoryを除くこともできる
+```
+ 
