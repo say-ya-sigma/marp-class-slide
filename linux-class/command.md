@@ -25,4 +25,21 @@ tree -I 'wasteDir|wasteDir2' # |を使うことで複数指定できる
 tree -I wasteDir? # ワイルドカード
 ```
 
+# ファイルには権限がある
+* rwx(read write execute)
+* user:group
+* 最も基本的なセキュリティ
+
+# ファイルにはメタ情報がある
+* 使用している容量
+* 最終更新日
+
+# lsコマンド
+```bash
+ls
+ls -l # ファイルには権限 rwx(read write execute) と user:group がある。容量や最終更新日も表示される。
+ls -a # dot fileと呼ばれる先頭に.がついているファイルがある。通常のlsコマンド等から除外される。何かのソフトウエアの設定ファイルなどがこの形式で書かれる。
+```
+
+
 
