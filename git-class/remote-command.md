@@ -57,7 +57,7 @@ cd リポジトリ名
 # 作業ブランチを切る
 
 ```bash
-git checkout -b "myname/working"
+git switch -c "myname/working"
 ```
 
 # 変更をコミット
