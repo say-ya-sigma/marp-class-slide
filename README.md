@@ -7,6 +7,12 @@
     * Linuxの基本コマンド
     * 標準入出力
     * リダイレクトとパイプ
-* Gitの基本的なコマンドとGitHubについて
+* Gitの基本的なコマンドとGitHubとCICDについて
+    * gitのインストール
+    * gitの基本コマンド
+    * ローカルリポジトリ、リモートリポジトリ
+    * CI/CD
+    * GitHub
+    * GitHub演習
 * RDBMSについて
 * ORMについて
