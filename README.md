@@ -4,15 +4,16 @@
 * Linuxの概要とDocker
   * Linuxの歴史
   * Dockerとdevcontainerについて
+  * gitのインストール
   * Linuxの基本コマンド
   * 標準入出力
   * リダイレクトとパイプ
 * Gitの基本的なコマンドとGitHubとCICDについて
-  * gitのインストール
   * gitの基本コマンド
   * ローカルリポジトリ、リモートリポジトリ
   * CI/CD
   * GitHub
+  * GitHubのアカウント作成
   * GitHub演習
 * RDBMSについて
   * RDBとは
@@ -21,3 +22,4 @@
   * RDBMSの操作
   * 物理設計について
 * ORMについて
+  * TBD
