@@ -48,11 +48,11 @@ section.lead h1 {
 # Bourne shell 系
 
 * Bourne shell `sh`
-	* Almquist shell `ash`
-		* Debian Almquist shell `dash`
-	* Bourne Again shell `bash` (主流)
-	* Korn shell `ksh`
-		* Z shell zsh `zsh` (主にmac)
+  * Almquist shell `ash`
+    * Debian Almquist shell `dash`
+  * Bourne Again shell `bash` (主流)
+  * Korn shell `ksh`
+    * Z shell zsh `zsh` (主にmac)
 
 # それ以外のシェル
 
@@ -64,8 +64,8 @@ section.lead h1 {
 # ディストリビューションの誕生
 
 * Linux インストールは難し過ぎる
-* そこで Ubuntu 等のディストリビューション
-    * Linux+α を簡単にインストールできる
+* Debian 等のディストリビューションが登場
+  * Linux+α を簡単にインストールできる
 * **パッケージ**でソフトウエアを導入する
 
 # パッケージ
@@ -73,9 +73,9 @@ section.lead h1 {
 
 # ソフトウエアの頒布形式
 * ソースコード
-    * ユーザーがビルドして、バイナリを得る
+  * ユーザーがビルドして、バイナリを得る
 * バイナリ（実行形式）
-    * ディストリビューターの手によってビルドされたものを入手する
+  * ディストリビューターの手によってビルドされたものを入手する
 
 # パッケージ
 * 主にバイナリ形式
@@ -85,14 +85,14 @@ section.lead h1 {
 
 # パッケージ管理システム
 * パッケージの管理
-	* パッケージのバージョンの管理
-	* パッケージのインストール元（リポジトリ）の管理
-	* パッケージの依存の管理
+  * パッケージのバージョンの管理
+  * パッケージのインストール元（リポジトリ）の管理
+  * パッケージの依存の管理
 * apt, yum, homebrew
 
 # 依存
 * 依存
-	* ソフトウエアAのインストールの前提となるライブラリB
+  * ソフトウエアAのインストールの前提となるライブラリB
     * ソフトウエアAはライブラリBに依存している
 * 複数のソフトウエアから依存されているパッケージも
 
