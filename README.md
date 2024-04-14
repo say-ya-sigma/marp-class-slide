@@ -17,9 +17,13 @@
   * GitHub演習
 * RDBMSについて
   * RDBとは
-  * RDB設計 ユーザーヒアリングとデータモデリング
-  * 論理設計 ER図と論理設計
-  * RDBMSの操作
-  * 物理設計について
+  * SQL基本
+  * GROUP BY句、HAVING句
+  * サブクエリ
+  * ER図と論理設計
+  * 主キー、外部キーインデックスと物理設計
 * ORMについて
-  * TBD
+  * ORMとは
+  * SQLAlchemyとは
+  * Modelとは
+  * migrationsとは
