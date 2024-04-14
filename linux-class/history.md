@@ -89,7 +89,7 @@ section.lead h1 {
 # GPL ライセンス
 
 * GPL (GNU General Public License: GNU 一般公衆利用許諾)
-* チャードストールマン
+* リチャードストールマン
   * GNUプロジェクト
 * Linuxのライセンスとして採用された
 * **フリーソフトウエアライセンス**
