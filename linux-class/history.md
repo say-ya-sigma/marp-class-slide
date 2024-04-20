@@ -65,7 +65,7 @@ section.lead h1 {
   * ライセンサー: ライセンスを供与する人・団体
   * ライセンシー: ライセンスを供与される人・団体
 * ライセンス絡みで2つの流れに分かれる 
-  * AT&T版UNIX "Systen V"
+  * AT&T版UNIX "System V"
   * UNIX互換OS
     * 正式にライセンス契約を結んでいないUNIX
 
