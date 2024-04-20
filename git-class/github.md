@@ -13,7 +13,30 @@ size: 16:9
 * Gitのリモートリポジトリのホスティング・管理
 * プロジェクトの管理
 
-# GitHubとCI/CD
+# GitHubのIssue
+* プロジェクトのタスク管理
+* バグトラッキング
+* 機能リクエストの管理
 
+# GitHubのPull Request
+* プロジェクトへの変更の提案
+* レビューのためのコードの共有
+* マージのためのコードの統合
+
+# GitHubのLabel
+* IssueやPull Requestにラベルを付けることができる
+* タスクの種類や状態を表す
+
+# GitHubのmilestone
+* IssueやPull Requestをグループ化する
+* 期限を設定する
+* プロジェクト等の進捗を管理することができる
+
+# GitHubのProject
+* IssueやPull Requestをカードとして管理する
+* カンバンスタイルのプロジェクト管理が可能
+
+# GitHubとCI/CD
 * GitHub Actionsを使ったCI
-* GitHubインテグレーション
+* CI/CDツールのGitHubインテグレーション
+* CI/CDの中心にGitHubがある場合が多い
