@@ -17,6 +17,11 @@ section.lead h1 {
 </style>
 
 # Linuxの演習環境を作る
+```bash
+git clone git@github.com:say-ya-sigma/linux-exercises.git
+cd linux-exercises
+docker compose up
+```
 
 # ファイルとディレクトリは階層構造になっている
 * 自分の手元の環境のディレクトリ構成を管理するのもエンジニアの仕事。
