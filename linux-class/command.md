@@ -9,6 +9,15 @@ paginate: true
 size: 16:9
 ---
 
+<style>
+section.lead h1 {
+  text-align: center;
+  font-size: 90px;
+}
+</style>
+
+# Linuxの演習環境を作る
+
 # ファイルとディレクトリは階層構造になっている
 * 自分の手元の環境のディレクトリ構成を管理するのもエンジニアの仕事。
 * 職人で言う自分の作業場所の整理整頓。
@@ -20,9 +29,9 @@ tree
 tree -i 
 tree -f
 tree -if | grep wantedFile # -ifというオプションを使うとgrepというコマンドで検索しやすい形になる。
-tree -I wasteDir # -Iというオプションを使うと見たくないファイルを除外できる。
-tree -I 'wasteDir|wasteDir2' # |を使うことで複数指定できる
-tree -I wasteDir? # ワイルドカード
+tree -I findDir # -Iというオプションを使うと見たくないファイルを除外できる。
+tree -I 'findDir|findDirNested' # |を使うことで複数指定できる
+tree -I 'findDir*' # ワイルドカード
 ```
 
 # ファイルには権限がある
@@ -48,6 +57,7 @@ ls -a # dot fileと呼ばれる先頭に.がついているファイルがある
 	* `bash` が立ち上がる度に実行されている
 
 # ファイル操作コマンド
+<!-- _class: lead -->
 
 # cpコマンド
 copy
@@ -73,6 +83,7 @@ rm -r # 再帰的に削除
 ```
 
 # ディレクトリ操作コマンド
+<!-- _class: lead -->
 
 # pwdコマンド
 print working directory
@@ -81,7 +92,7 @@ print working directory
 pwd
 ```
 # cdコマンド
-ｃhange directory
+change directory
 ```bash
 cd /home # 絶対パス
 cd relativePath # 相対パス
@@ -110,11 +121,13 @@ mkdir -p parent/child
 # rmdirコマンド
 remove directory
 ```bash
+rm emptyDir/.gitkeep
 rmdir emptyDir
 ```
 中が空でないと削除できない
 
 # ファイルの内容を表示
+<!-- _class: lead -->
 
 # catコマンド
 concatenate(連結)
@@ -131,6 +144,11 @@ cat texts/*　# 複数ファイルを選択すると連結して表示される
 * `/単語` 単語を検索。 n キーで検索結果をジャンプ。
 * `q` ページャコマンドを終了 (quit) します。
 
+# moreコマンドにcatコマンドの結果を流し込む
+```bash
+cat texts/* | more
+```
+
 # lessコマンド
 * `スペース` 次のページに進む
 * `b` 前の一画面に戻る
@@ -140,13 +158,19 @@ cat texts/*　# 複数ファイルを選択すると連結して表示される
 * `/単語` 単語を検索。 n キーで検索結果をジャンプ。
 * `q` ページャコマンドを終了 (quit) します。
 
+# moreコマンドにcatコマンドの結果を流し込む
+```bash
+cat texts/* | less
+```
+
 # 検索
+<!-- _class: lead -->
 
 # findコマンド
 ```bash
 find findDir/ -name wantedFile
 find findDir/ -name '*.md' # nameにはワイルドカードが指定できる
 find findDir/ -name '*.md' | xargs wc -l # xargsを使ってパイプすると例えばマッチするファイルの行数を数えられる。
-find nestedFindDir/ -name '*.md' -type f # directoryを除くこともできる
+find findDirNested/ -name '*.md' -type f # directoryを除くこともできる
 ```
  
