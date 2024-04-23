@@ -21,25 +21,36 @@ section.lead h1 {
 
 # Dockerとは
 
-* Docker, Inc. が運用している**コンテナ**技術
-* Go言語で書かれている
+* Docker, Inc. の**コンテナ**技術
 * **コンテナ**技術のデファクトスタンダード
-* https://www.youtube.com/watch?v=wW9CAH9nSLs
+* 有名なLT（ライトニングトーク）がある
+  * https://www.youtube.com/watch?v=wW9CAH9nSLs
 
 # コンテナとは
 
-* コードと依存関係をパッケージ化する単位
+* コードとその"依存"をパッケージ化
 * アプリケーションの実行に必要な全てを含む
-  * コード、ランタイム、システムツール、システムライブラリ、設定
+  * コード、ランタイム、システムツール、システムライブラリ、コンフィグ
 * ローカルの開発環境から本番環境まで様々な場面で使われる
+
+# Dockerは様々な場所で使われる
+
+![h:400](image/run-everywhere.png)
+https://www.docker.com/resources/what-container/
 
 # VMとの比較
 
 * Docker
   * Linuxのユーザランドのプロセスとしてコンテナを立ち上げる
-  * コンテナ間でカーネルは共有されている
+  * ホストのカーネルは共有されている
 * VM
   * 抽象化されたハードウエア上にOSを乗せる
+  * 実行に必要な全てをVM上に構築
+
+# VMとの比較
+
+![h:400](image/containerized.png)
+https://www.docker.com/resources/what-container/
 
 # この授業におけるDocker
 
@@ -71,7 +82,7 @@ section.lead h1 {
 * 色んなGUIツールが付属する
 
 # Dockerのインストール
-* brewでインストールしたい
+brewでインストールしたい
 https://formulae.brew.sh/cask/docker
 ```bash
 $ brew install --cask docker
