@@ -36,8 +36,60 @@ section.lead h1 {
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-※ 実行後指示された通りパスを通す
 
+# 実行後指示された通りパスを通す
+```
+==> Next steps:
+
+Add Homebrew to your PATH in /Users/hoge/.zprofile:
+echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> /Users/hoge/.zprofile
+eval $(/opt/homebrew/bin/brew shellenv)
+```
+下の二行がコマンド
+```bash
+echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> /Users/hoge/.zprofile
+eval $(/opt/homebrew/bin/brew shellenv)
+```
+
+# 補足 パスって何？
+
+コマンドを実行するとき
+1. コマンドが入力される
+1. **オペレーティングシステム（OS）は実行すべきプログラムを特定する**
+1. コマンドが実行される
+
+2に必要な環境変数が「PATH」
+
+# 補足 `echo` って何？
+
+* 文字列を与えると文字列を返すコマンド
+
+# 補足 `eval` って何？
+
+* コマンド等を与えてそれを評価する（実行する）
+
+# 補足 `$()` って何？
+
+* `()` の内部を評価（実行）して返り値を文字列として展開する
+
+# 補足 `>>` って何？
+
+* コマンドの出力先をファイルに
+  * `>` でファイルを置き換え
+  * `>>` でファイルに追記
+
+# 補足 `.zprofile` って何？
+
+* シェル（その黒い画面）を起動するたびに実行されているファイル
+
+# 補足 環境変数って何？
+
+* OSはプログラムの実行に必要な変数を多数管理している
+* envコマンドを打つと現在管理している環境変数が見れる
+```bash
+env
+echo $PATH #現在のPATHが見れる
+```
 # 2. Homebrewを使用して<br>Gitをインストール
 
 ```bash
