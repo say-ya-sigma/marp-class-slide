@@ -3,8 +3,8 @@
 ### 前期
 * Linuxの概要とDocker
   * Linuxの歴史
-  * Dockerとdevcontainerについて
   * gitのインストール
+  * Dockerとdevcontainerについて
   * Linuxの基本コマンド
   * 標準入出力
   * リダイレクトとパイプ
@@ -27,3 +27,16 @@
   * SQLAlchemyとは
   * Modelとは
   * migrationsとは
+
+* 時間が残ったら後期の演習の前倒し
+
+### 後期
+* 演習イントロ
+  * サンプルプロジェクト紹介
+  * 班分け
+  * モブプロ
+
+* 班ごとにモブプロしてPRを作ってもらう
+* タスク管理はGitHub projectで行う
+* 仕様に沿ったテストはあらかじめ書かれている
+* フロントエンドはあらかじめ書かれている
