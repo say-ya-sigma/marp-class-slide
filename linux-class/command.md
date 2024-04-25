@@ -18,7 +18,7 @@ section.lead h1 {
 
 # Linuxの演習環境を作る
 ```bash
-git clone git@github.com:say-ya-sigma/linux-exercises.git
+git clone https://github.com/say-ya-sigma/linux-exercises.git
 cd linux-exercises
 docker compose up
 ```
