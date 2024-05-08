@@ -61,7 +61,7 @@ ls -l /usr/bin | grep apt # grepへのパイプ、出力を絞り込める
 # 正規表現の例
 
 ```bash
-cat sample.py | grep '^def' # defで始まる行、関数の定義
+cat sample.py | grep '^class' # classで始まる行、クラスの定義
 cat sample.py | grep ':$' # :で終わる行、関数やクラスの定義
-cat sample.py | grep 'print\(.*\)' # 何かしらをprintしている文
+cat sample.py | grep 'tk\.[^(]*(' # tkというライブラリを呼んでいる個所
 ```
