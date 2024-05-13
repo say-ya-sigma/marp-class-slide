@@ -1,3 +1,24 @@
+---
+marp: true
+theme: "gaia"
+header: "授業スライド"
+footer: "©2024 seiya sugimoto. All rights reserved."
+backgroundColor: white
+headingDivider: 1
+paginate: true
+size: 16:9
+---
+
+<style>
+section.lead h1 {
+  text-align: center;
+  font-size: 90px;
+}
+</style>
+
+# 標準入出力
+<!-- _class: lead -->
+
 # 通常の標準入出力
 
 * 標準入力
