@@ -79,11 +79,7 @@ https://www.docker.com/resources/what-container/
 
 # Docker Desktop
 * 一発でDockerのセットアップが終わる
-* 色んなGUIツールが付属する
+* 高機能なGUIツール
 
 # Dockerのインストール
-brewでインストールしたい
-https://formulae.brew.sh/cask/docker
-```bash
-$ brew install --cask docker
-```
+<!-- _class: lead -->
