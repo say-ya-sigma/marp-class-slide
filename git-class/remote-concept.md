@@ -1,3 +1,21 @@
+---
+marp: true
+theme: "gaia"
+header: "授業スライド"
+footer: "©2024 seiya sugimoto. All rights reserved."
+backgroundColor: white
+headingDivider: 1
+paginate: true
+size: 16:9
+---
+
+<style scoped>
+section.lead h1 {
+  text-align: center;
+  font-size: 90px;
+}
+</style>
+
 # ローカルリポジトリとリモートリポジトリ
 
 * リモートリポジトリはサーバーにある
