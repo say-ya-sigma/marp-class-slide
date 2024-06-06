@@ -19,15 +19,21 @@ section.lead h1 {
 <!-- _class: lead -->
 # Gitのリモートリポジトリに<br>関するコマンド
 
+# GitHubへの接続方式
+* Personal Access Tokenを使った方法
+  * GitHub独自のトークンを使う
+* SSHを使った方法
+  * Gitの共有リポジトリで広く使われる方法
+
 # ssh鍵を作る
 
 ```bash
 ssh-keygen -t ed25519
 ```
 
-* `GitHub` への `SSH` アクセスに使用する
 * アルゴリズムは `ed25519`
-* `pass phrase` が求められる。なくても良いがあったほうがセキュア。
+* 全てデフォルト設定でOK
+* `pass phrase` を任意で設定できる。設定する場合は忘れないように。
 
 # ssh鍵を確認する
 
@@ -77,3 +83,8 @@ git commit -m "fix READMEを更新"
 ```bash
 git push origin myname/working
 ```
+
+# GitHubでPRを作る
+
+* GitHubを見ると先ほど作業ブランチをプッシュした旨が表示されている。
+* PRを作成する
