@@ -17,7 +17,7 @@ section.lead h1 {
 }
 </style>
 
-# 開発を支えるデータベース製品
+# 開発を支えるデータベース<br>製品
 <!-- _class: lead -->
 
 # PostgreSQL
