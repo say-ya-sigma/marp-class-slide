@@ -27,13 +27,6 @@ section.lead h1 {
 * SQLを使って管理
 * トランザクションによるDB共用時等の一貫性保証
 
-# RDBMS
-* RDB管理システム
-  * Microsoft SQL Server
-  * Oracle Database
-  * MySQL, MariaDB
-  * Postgres SQL
-
 # テーブル
 * RDBに沢山のテーブルが格納されている
 * 実際にどういう形でデータが格納されているかイメージ
