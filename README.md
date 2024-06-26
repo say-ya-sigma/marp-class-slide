@@ -18,6 +18,7 @@
 * RDBMSについて
   * 世の中のRDB製品
   * RDBを実際どう使ってるか
+  * DBとは（最もシンプルなデータベース）
   * RDBとは
   * SQL基本
   * GROUP BY句、HAVING句
