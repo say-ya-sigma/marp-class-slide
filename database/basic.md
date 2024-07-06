@@ -56,26 +56,6 @@ size: 16:9
 * データベースの操作や管理に使用
 * 対話的に SQL を実行可能
 
-# `psql -l`
-
-* 現在のユーザーが接続可能なデータベースの一覧を表示
-* データベース名、所有者、エンコーディングなどの情報を確認
-* 新しくデータベースを作成する前に確認すると便利
-
-# `psql kdkwdb`
-
-* `kdkwdb` という名前のデータベースに接続
-  * RDBMSの中に複数データベース
-  * データベースの中に複数テーブル
-  * テーブルの中に複数カラム
-* 接続後は `kdkwdb=#` というプロンプトが表示される
-
-# `kdkwdb=# help`
-
-* psql 内でのヘルプコマンド
-* SQL コマンドやメタコマンドの一覧を表示
-* コマンドの詳細な説明を確認
-
 # メタコマンド
 
 * psql 独自のコマンド
@@ -106,9 +86,9 @@ size: 16:9
 * テーブル、ビュー、インデックスなどの情報を確認
 * オブジェクトの詳細情報は `\d オブジェクト名`
 
-# `\d customer`
+# `\d likes`
 
-* `customer` テーブルの定義情報を表示
+* `likes` テーブルの定義情報を表示
 * カラム名、データ型、制約などの詳細を確認
 * テーブル構造の把握に役立つ
 
@@ -118,57 +98,17 @@ size: 16:9
 * 現在の接続を切断し、指定したデータベースに接続
 * `\c データベース名` の形式で使用
 
-# 使用例
-
-```
-kdkwdb=# \c vantandb
-You are now connected to database "vantandb" as user "postgres".
-vantandb=#
-```
-
-* `kdkwdb` から `vantandb` へ接続を切り替える
-* プロンプトが `vantandb=#` に変化
-
 # `\dt`
 
 * 現在のデータベースのテーブル一覧を表示
 * テーブル名、所有者、種類などの情報を確認
 * `\dt+` で詳細情報を表示可能
 
-# 使用例
-
-```
-vantandb=# \dt
-          List of relations
- Schema |   Name   | Type  |  Owner
---------+----------+-------+----------
- public | customer | table | postgres
- public | orders   | table | postgres
-(2 rows)
-```
-
-* `customer` と `orders` の2つのテーブルが存在
-* それぞれのテーブルの所有者は `postgres`
-
 # `\dv`
 
 * 現在のデータベースのビュー一覧を表示
 * ビュー名、所有者、種類などの情報を確認
 * `\dv+` で詳細情報を表示可能
-
-# 使用例
-
-```
-vantandb=# \dv
-          List of relations
- Schema |   Name    | Type |  Owner
---------+-----------+------+----------
- public | salesview | view | postgres
-(1 row)
-```
-
-* `salesview` というビューが存在
-* ビューの所有者は `postgres`
 
 # その他のメタコマンド
 
