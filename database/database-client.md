@@ -55,27 +55,3 @@ section.lead h1 {
 * 自分が使っている
 * インストールが手軽
 * SQLToolsが代替として考えられる
-
-# SELECTをしてみよう
-
-```sql
-SELECT * FROM users WHERE name='Alice';
-```
-
-# INSERTをしてみよう
-
-```sql
-INSERT INTO users (name, email) VALUES ('AA', 'email@example.com');
-```
-
-# UPDATEをしてみよう
-
-```sql
-UPDATE users SET name='XavierF' WHERE id=24;
-```
-
-# DELETEをしてみよう
-
-```sql
-DELETE FROM "users" WHERE "id"=24;
-```

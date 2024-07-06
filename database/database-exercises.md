@@ -71,3 +71,27 @@ brew install postgresql
 # postgresqlのコンソールを開く
 
 * コネクションの行の `OpenTerminal` を開く
+
+# SELECTをしてみよう
+
+```sql
+SELECT * FROM users WHERE name='Alice';
+```
+
+# INSERTをしてみよう
+
+```sql
+INSERT INTO users (name, email) VALUES ('AA', 'email@example.com');
+```
+
+# UPDATEをしてみよう
+
+```sql
+UPDATE users SET name='XavierF' WHERE id=24;
+```
+
+# DELETEをしてみよう
+
+```sql
+DELETE FROM "users" WHERE "id"=24;
+```
