@@ -73,15 +73,15 @@ class BTree:
             temp.insert_non_full(k)
         else:
             root.insert_non_full(k)
-# Example usage:
-btree = BTree(3)  # B-Tree with minimum degree 3
-insert_keys = [45, 3, 29, 18, 12, 23, 46, 37, 30, 6, 41, 27, 4, 17, 1, 16, 5, 44, 48, 24, 39, 19, 34, 13, 2, 32, 50, 8, 21, 9, 35, 36]
-for k in insert_keys:
-    btree.insert(k)
-print("Traversal of the constructed tree is:")
-btree.traverse()
-k = 6
-if btree.search(k) is not None:
-    print(f"\nPresent {k}")
-else:
-    print(f"\nNot Present {k}")
+
+if __name__ == "__main__":
+    # Example usage:
+    btree = BTree(3)  # B-Tree with minimum degree 3
+    insert_keys = [45, 3, 29, 18, 12, 23, 46, 37, 30, 6,
+                   41, 27, 4, 17, 1, 16, 5, 44, 48, 24,
+                   39, 19, 34, 13, 2, 32, 50, 8, 21, 9]
+    for i in range(len(insert_keys)):
+        btree.insert(insert_keys[i])
+        if (i + 1) % 1 == 0:
+            print("Traversal step", i + 1, ":")
+            btree.traverse()
