@@ -41,15 +41,15 @@ class BTreeNode:
                 if self.keys[i + 1] < insert_key:
                     i += 1
             self.children[i + 1].insert_non_full(insert_key)
-    def split_child(self, split_index:int, new_parent_node:"BTreeNode"):
-        other_node = BTreeNode(new_parent_node.minimum_degree, new_parent_node.is_leaf)
-        self.children.insert(split_index + 1, other_node)
-        self.keys.insert(split_index, new_parent_node.keys[self.minimum_degree - 1])
-        other_node.keys = new_parent_node.keys[self.minimum_degree:(2 * self.minimum_degree - 1)]
-        new_parent_node.keys = new_parent_node.keys[0:(self.minimum_degree - 1)]
-        if not new_parent_node.is_leaf:
-            other_node.children = new_parent_node.children[self.minimum_degree:(2 * self.minimum_degree)]
-            new_parent_node.children = new_parent_node.children[0:self.minimum_degree]
+    def split_child(self, split_index:int, child_node:"BTreeNode"):
+        another_child_node = BTreeNode(child_node.minimum_degree, child_node.is_leaf)
+        self.children.insert(split_index + 1, another_child_node)
+        self.keys.insert(split_index, child_node.keys[self.minimum_degree - 1])
+        another_child_node.keys = child_node.keys[self.minimum_degree:(2 * self.minimum_degree - 1)]
+        child_node.keys = child_node.keys[0:(self.minimum_degree - 1)]
+        if not child_node.is_leaf:
+            another_child_node.children = child_node.children[self.minimum_degree:(2 * self.minimum_degree)]
+            child_node.children = child_node.children[0:self.minimum_degree]
 
 class BTree:
     def __init__(self, t:int):
