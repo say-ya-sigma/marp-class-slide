@@ -19,7 +19,7 @@ section.lead h1 {
 # database exercisesリポジトリをクローン
 
 ```bash
-cd dev
+cd ~/dev
 git clone https://github.com/say-ya-sigma/database-exercises.git
 cd database-exercises
 ```
@@ -28,6 +28,12 @@ cd database-exercises
 
 ```bash
 make up
+```
+
+# パッケージのインストール
+
+```bash
+make poetry-install
 ```
 
 # シーディング
