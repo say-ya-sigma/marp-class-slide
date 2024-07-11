@@ -23,7 +23,7 @@ class BTreeNode:
             return self
         if self.is_leaf:
             return None
-        return self.children[i].search(k)
+        return self.children[i].search(search_key)
     def insert_non_full(self, insert_key:int):
         # ノードがいっぱいでない場合の挿入
         i = len(self.keys) - 1
