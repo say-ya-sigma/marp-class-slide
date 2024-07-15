@@ -25,7 +25,7 @@ class BTreeNode:
             return None
         return self.children[i].search(search_key)
     def insert_non_full(self, insert_key:int):
-        # ノードがいっぱいでない場合の挿入
+        # ルートノードがいっぱいでない場合の挿入
         i = len(self.keys) - 1
         if self.is_leaf:
             self.keys.append(None)
@@ -77,11 +77,17 @@ class BTree:
 if __name__ == "__main__":
     # Example usage:
     btree = BTree(3)  # B-Tree with minimum degree 3
-    insert_keys = [45, 3, 29, 18, 12, 23, 46, 37, 30, 6,
-                   41, 27, 4, 17, 1, 16, 5, 44, 48, 24,
-                   39, 19, 34, 13, 2, 32, 50, 8, 21, 9]
+    traverse_per_step = 1
+    insert_keys = [57, 64, 75, 90, 74, 19, 88, 33, 21, 11,
+                  85, 36, 68, 95, 38, 4, 92, 14, 81, 17,
+                  99, 32, 53, 29, 55, 13, 72, 54, 83, 18,
+                  43, 10, 26, 79, 61, 41, 50, 3, 73, 24,
+                  63, 39, 45, 25, 20, 34, 49, 35, 31, 12,
+                  42, 93, 6, 1, 47, 30, 66, 7, 8, 28,
+                  22, 62, 37, 2, 9, 27, 48, 46, 44, 16]
     for i in range(len(insert_keys)):
         btree.insert(insert_keys[i])
-        if (i + 1) % 1 == 0:
-            print("Traversal step", i + 1, ":")
+        if (i + 1) % traverse_per_step == 0:
+            print("Traversal step " + str(i + 1) + " insert " + str(insert_keys[i]) + ":")
             btree.traverse()
+            print("---------------------------\n")
