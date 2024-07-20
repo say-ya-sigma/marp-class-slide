@@ -63,7 +63,7 @@ SELECT * FROM likes WHERE id IN (1, 3, 5);
 SELECT *
 FROM likes
 WHERE EXISTS (
-    SELECT likes
+    SELECT id
     FROM posts
     WHERE posts.id = likes.post_id AND posts.user_id = 3
 )
