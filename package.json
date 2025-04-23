@@ -4,7 +4,7 @@
   "description": "class slides",
   "main": "index.js",
   "scripts": {
-    "serve": "npx @marp-team/marp-cli -s ."
+    "serve": "PORT=5000 npx @marp-team/marp-cli -s ."
   },
   "author": "sigma",
   "license": "UNLICENSED",

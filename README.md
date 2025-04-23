@@ -26,17 +26,27 @@
   * LIMIT句、OFFSET句
   * サブクエリ
 
-### 後期
+### 夏休み明けから後期
 * ORMについて
-  * ORMとは
-  * SQLAlchemyとは
-  * Modelとは
-  * migrationsとは
-* MVCとリポジトリパターン
-  * MVC概要
-  * MVCにおけるDBとモデル
-  * リポジトリパターン
-  * サービスクラス
+  * ORM
+    * オブジェクト指向モデルとは
+    * リレーショナルモデルとは
+    * オブジェクト指向モデルとリレーショナルモデルの間のインピーダンスミスマッチ
+  * SQLAlchemy
+    * SQLAlchemyとは
+    * alembicとは
+    * Model(Entity)とは
+    * migrationsとは
+    * migrationの自動生成
+* Webにおけるデータベースの位置づけ
+  * MVCとデータベース
+    * MVC概要
+    * MVCにおけるDB
+    * リポジトリパターン
+    * サービスクラス
+  * DDDとデータベース
+    * DDD概要
+    * DDDにおけるDB
 * DB設計
   * ER図と論理設計
   * 主キー、外部キーインデックスと物理設計
